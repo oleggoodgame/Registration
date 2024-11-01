@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/other"
+    tools:context=".InformationFragment">
+
+    <EditText
+        android:id="@+id/editTextText_i"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Name"
+        android:focusable="false"
+        app:layout_constraintBottom_toTopOf="@+id/editTextText2_i"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextText2_i"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:focusable="false"
+        android:inputType="textPassword"
+        android:hint="Password"
+        app:layout_constraintBottom_toTopOf="@+id/editTextText3_i"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText_i" />
+
+    <Button
+        android:id="@+id/button_i"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/bad"
+        android:text="CHANGE"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText4_i" />
+
+    <Button
+        android:id="@+id/button2_i"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/good"
+        android:text="OK"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.85"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText4_i" />
+
+    <EditText
+        android:id="@+id/editTextText4_i"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="none"
+        android:focusable="false"
+        android:hint="Calendar"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText3_i"
+        app:layout_constraintBottom_toTopOf="@+id/button_i"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextText3_i"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="text"
+        android:hint="Number Phone"
+        android:focusable="false"
+        app:layout_constraintBottom_toTopOf="@+id/editTextText4_i"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText2_i" />
+
+    <Button
+        android:id="@+id/imageButton_i"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/eye_hide"
+        app:layout_constraintBottom_toTopOf="@+id/editTextText3_i"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editTextText2_i"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText_i" />
+
+    <Button
+        android:id="@+id/imageButton2_i"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/eye_removed"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/editTextText3_i"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editTextText2_i"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText_i" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

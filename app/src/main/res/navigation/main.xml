@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    app:startDestination="@id/startFragment">
+
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="com.example.registration.StartFragment"
+        android:label="fragment_start"
+        tools:layout="@layout/fragment_start" >
+        <action
+            android:id="@+id/action_startFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/changeFragment"
+        android:name="com.example.registration.ChangeFragment"
+        android:label="fragment_change"
+        tools:layout="@layout/fragment_change" />
+    <fragment
+        android:id="@+id/informationFragment"
+        android:name="com.example.registration.InformationFragment"
+        android:label="fragment_information"
+        tools:layout="@layout/fragment_information" >
+        <action
+            android:id="@+id/action_informationFragment_to_changeFragment"
+            app:destination="@id/changeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fullSizeFragmentDialog"
+        android:name="com.example.registration.FullSizeFragmentDialog"
+        android:label="fragment_full_size_dialog"
+        tools:layout="@layout/fragment_full_size_dialog" />
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.registration.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_informationFragment"
+            app:destination="@id/informationFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_changeFragment"
+            app:destination="@id/changeFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_fullSizeFragmentDialog"
+            app:destination="@id/fullSizeFragmentDialog" />
+    </fragment>
+</navigation>
